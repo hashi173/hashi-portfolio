@@ -28,7 +28,7 @@ const BridgeTransition: React.FC<BridgeTransitionProps> = ({ progress }) => {
         className="absolute inset-0 z-0"
       >
         <img
-          src="/bridge_bg.png"
+          src="/hashi-portfolio/bridge_bg.png"
           alt="Traditional Bridge"
           className="w-full h-full object-cover filter brightness-90 grayscale-[0.2]"
         />
