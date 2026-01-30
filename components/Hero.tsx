@@ -77,7 +77,7 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
       <motion.div
         animate={{ y: [0, -20, 0], opacity: [0.03, 0.06, 0.03] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-20 text-9xl font-serif text-[#2E4057] pointer-events-none select-none"
+        className="absolute top-10 left-10 text-9xl font-serif text-[#2E4057] pointer-events-none select-none"
       >
         接続する
       </motion.div>
@@ -144,11 +144,11 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
               width: { delay: 0.8, duration: 1.5, ease: "circOut" },
               opacity: { duration: 5, repeat: Infinity, ease: "easeInOut" }
             }}
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-4 md:h-8 bg-[#D4AF37]/10 -rotate-2 -z-10"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-2 md:h-4 bg-[#D4AF37]/10 -rotate-2 -z-10"
           />
 
           <motion.span
-            className="absolute -right-8 -top-8 text-5xl md:text-7xl text-[#D4AF37] font-serif"
+            className="absolute -right-4 -top-4 text-5xl md:text-7xl text-[#D4AF37] font-serif"
             animate={{
               rotate: [0, 5, 0],
               y: [0, -5, 0],
@@ -164,7 +164,7 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
           initial={{ opacity: 0, letterSpacing: "0.2em" }}
           animate={{ opacity: 1, letterSpacing: "0.5em" }}
           transition={{ delay: 1.2, duration: 1.5 }}
-          className="mt-12 text-lg uppercase text-[#2E4057]/60 font-['Zen_Kaku_Gothic_New'] font-bold"
+          className="mt-6 text-lg uppercase text-[#2E4057]/60 font-['Zen_Kaku_Gothic_New'] font-bold"
         >
           Also called Galaxy - "Thiên Hà"
         </motion.p>
@@ -182,10 +182,10 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-12 flex flex-col items-center opacity-30"
+        className="absolute bottom-6 flex flex-col items-center opacity-30"
       >
-        <span className="text-[17px] uppercase tracking-widest mb-2 font-['Zen_Kaku_Gothic_New']">Scroll</span>
-        <div className="w-[1px] h-24 bg-[#2E4057]" />
+        <span className="text-[17px] uppercase tracking-widest mb-1 font-['Zen_Kaku_Gothic_New']">Scroll</span>
+        <div className="w-[1px] h-12 bg-[#2E4057]" />
       </motion.div>
     </motion.div>
   );

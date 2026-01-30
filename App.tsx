@@ -89,7 +89,7 @@ const App: React.FC = () => {
           <Revelation progress={smoothProgress} />
         </section>
 
-        <section className="relative z-30 bg-[#0B1015] pt-32 overflow-hidden">
+        <section className="relative z-30 bg-[#0B1015] pt-16 overflow-hidden">
           {/* Decorative Kanji background for Code section */}
           <div className="absolute top-0 right-0 text-[15rem] font-bold text-white/[0.02] pointer-events-none select-none font-['Shippori_Mincho'] translate-x-1/2 -translate-y-1/4">
             創
@@ -97,7 +97,7 @@ const App: React.FC = () => {
           <Portfolio />
         </section>
 
-        <section className="relative z-30 bg-[#0B1015] py-32">
+        <section className="relative z-30 bg-[#0B1015] py-16">
           <About />
         </section>
 
@@ -112,7 +112,7 @@ const App: React.FC = () => {
       <motion.button
         whileHover={{ scale: 1.1, backgroundColor: "#D4AF37", borderColor: "#D4AF37", color: "#FDFCF8" }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-8 right-8 z-[100] px-6 py-3 rounded-full border border-current text-xs uppercase tracking-widest mix-blend-difference text-white transition-all shadow-xl"
+        className="fixed bottom-4 right-4 z-[100] px-3 py-1.5 rounded-full border border-current text-xs uppercase tracking-widest mix-blend-difference text-white transition-all shadow-xl"
         onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
       >
         Inquire

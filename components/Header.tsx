@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-0 left-0 w-full h-24 flex items-center justify-between px-8 md:px-16 z-[100] mix-blend-difference text-white"
+      className="fixed top-0 left-0 w-full h-12 flex items-center justify-between px-4 md:px-8 z-[100] mix-blend-difference text-white"
     >
       <div className="flex items-center space-x-2">
         <a href="#" className="flex items-center hover:scale-105 transition-transform duration-500">
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
         </a>
       </div>
 
-      <nav className="flex space-x-12">
+      <nav className="flex space-x-6">
         {['About', 'Portfolio', 'Contact'].map((item) => (
           <a
             key={item}

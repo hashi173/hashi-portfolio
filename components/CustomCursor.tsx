@@ -6,7 +6,7 @@ const CustomCursor: React.FC = () => {
   const [isHovering, setIsHovering] = useState(false);
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
-  
+
   const springConfig = { damping: 25, stiffness: 700 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
@@ -38,7 +38,7 @@ const CustomCursor: React.FC = () => {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 w-4 h-4 bg-[#2E4057] rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        className="fixed top-0 left-0 w-2 h-2 bg-[#2E4057] rounded-full pointer-events-none z-[9999] mix-blend-difference"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
@@ -47,7 +47,7 @@ const CustomCursor: React.FC = () => {
         }}
       />
       <motion.div
-        className="fixed top-0 left-0 w-12 h-12 border border-[#D4AF37] rounded-full pointer-events-none z-[9998] mix-blend-difference"
+        className="fixed top-0 left-0 w-6 h-6 border border-[#D4AF37] rounded-full pointer-events-none z-[9998] mix-blend-difference"
         animate={{
           scale: isHovering ? 2.5 : 1,
           opacity: isHovering ? 0.3 : 1,

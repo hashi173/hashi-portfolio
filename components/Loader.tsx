@@ -39,9 +39,9 @@ const Loader: React.FC = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="mt-8 text-center"
+          className="mt-4 text-center"
         >
-          <span className="text-[#2E4057] font-['Shippori_Mincho'] italic text-2xl tracking-widest block mb-2">Hashi</span>
+          <span className="text-[#2E4057] font-['Shippori_Mincho'] italic text-2xl tracking-widest block mb-1">Hashi</span>
           <span className="text-[15px] uppercase tracking-[0.6em] text-[#2E4057]/40">Gathering Ink...</span>
         </motion.div>
       </div>
@@ -50,7 +50,7 @@ const Loader: React.FC = () => {
       <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
         transition={{ duration: 4, repeat: Infinity }}
-        className="absolute top-1/4 -left-20 text-[10rem] font-serif text-[#2E4057] pointer-events-none opacity-5"
+        className="absolute top-1/4 -left-10 text-[10rem] font-serif text-[#2E4057] pointer-events-none opacity-5"
       >
         忍耐
       </motion.div>
