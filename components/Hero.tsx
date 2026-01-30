@@ -53,7 +53,7 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
         transition={{ duration: 3.5, delay: 2.5, ease: "easeInOut" }}
         className="absolute inset-0 z-50 pointer-events-none bg-[#FDFCF8]"
       >
-        <img src="/hero_2.png" alt="Intro" className="w-full h-full object-cover" />
+        <img src="/hashi-portfolio/hero_2.png" alt="Intro" className="w-full h-full object-cover" />
       </motion.div>
 
       {/* Enhanced Multi-Layered Ink Ripple */}

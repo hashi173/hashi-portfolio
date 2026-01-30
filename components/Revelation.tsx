@@ -7,7 +7,7 @@ interface RevelationProps {
 }
 
 const Revelation: React.FC<RevelationProps> = ({ progress }) => {
-  const start = 0.15;
+  const start = 0.10;
   const end = 0.6;
 
   const doorSpread = useTransform(progress, [start, start + 0.15], ['0%', '-100%']);
