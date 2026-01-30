@@ -6,7 +6,7 @@ This portfolio represents my journey as a developer, blending the principles of 
 
 **Live Demo:** [https://hashi173.github.io/hashi-portfolio/](https://hashi173.github.io/hashi-portfolio/)
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Framework:** React 19 (Vite)
 - **Language:** TypeScript
@@ -32,7 +32,7 @@ This portfolio represents my journey as a developer, blending the principles of 
    npm run dev
    ```
 
-## 📦 Deployment
+## Deployment
 
 This project handles deployment to GitHub Pages automatically via `gh-pages`.
 
