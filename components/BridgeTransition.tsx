@@ -51,7 +51,7 @@ const BridgeTransition: React.FC<BridgeTransitionProps> = ({ progress }) => {
           An art lover "accidentally" became a developer
         </p>
 
-        <div className="max-w-5xl w-full mx-auto text-center space-y-1.5 font-['Zen_Kaku_Gothic_New'] text-white/90 text-xs leading-relaxed bg-black/60 backdrop-blur-md p-3 rounded-xl border border-white/10 shadow-2xl">
+        <div className="max-w-xl w-full mx-auto text-center space-y-1.5 font-['Zen_Kaku_Gothic_New'] text-white/90 text-xs leading-relaxed bg-black/60 backdrop-blur-md p-3 rounded-xl border border-white/10 shadow-2xl">
           <p className="text-sm">
             Honors IT Student at Posts and Telecommunications Institute of Technology (PTIT - Hà Nội).
             <br />
