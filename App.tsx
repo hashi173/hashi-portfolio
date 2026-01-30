@@ -91,7 +91,7 @@ const App: React.FC = () => {
 
         <section className="relative z-30 bg-[#0B1015] pt-32 overflow-hidden">
           {/* Decorative Kanji background for Code section */}
-          <div className="absolute top-0 right-0 text-[30rem] font-bold text-white/[0.02] pointer-events-none select-none font-['Shippori_Mincho'] translate-x-1/2 -translate-y-1/4">
+          <div className="absolute top-0 right-0 text-[15rem] font-bold text-white/[0.02] pointer-events-none select-none font-['Shippori_Mincho'] translate-x-1/2 -translate-y-1/4">
             創
           </div>
           <Portfolio />

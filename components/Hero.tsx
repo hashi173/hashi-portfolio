@@ -101,7 +101,7 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
             />
 
             <motion.h1
-              className="text-9xl md:text-[21rem] font-bold text-[#006994] font-['Hina_Mincho'] italic tracking-tighter relative z-10"
+              className="text-9xl md:text-[10.5rem] font-bold text-[#006994] font-['Hina_Mincho'] italic tracking-tighter relative z-10"
               initial={{ opacity: 0, filter: 'blur(15px)', scale: 1.05 }}
               animate={{
                 opacity: 1,
@@ -127,7 +127,7 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.6 }}
               transition={{ delay: 1, duration: 2 }}
-              className="absolute inset-0 text-9xl md:text-[21rem] font-bold text-[#00334e] font-['Hina_Mincho'] italic tracking-tighter mix-blend-overlay pointer-events-none"
+              className="absolute inset-0 text-9xl md:text-[10.5rem] font-bold text-[#00334e] font-['Hina_Mincho'] italic tracking-tighter mix-blend-overlay pointer-events-none"
             >
               Hashi
             </motion.h1>
@@ -184,7 +184,7 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-12 flex flex-col items-center opacity-30"
       >
-        <span className="text-[35px] uppercase tracking-widest mb-2 font-['Zen_Kaku_Gothic_New']">Scroll</span>
+        <span className="text-[17px] uppercase tracking-widest mb-2 font-['Zen_Kaku_Gothic_New']">Scroll</span>
         <div className="w-[1px] h-24 bg-[#2E4057]" />
       </motion.div>
     </motion.div>

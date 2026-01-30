@@ -64,7 +64,7 @@ const Revelation: React.FC<RevelationProps> = ({ progress }) => {
         </ul>
 
         {/* Binary Floating Elements */}
-        <div className="absolute bottom-12 left-12 text-cyan-400/20 font-mono text-[8px] leading-none">
+        <div className="absolute bottom-12 left-12 text-cyan-400/20 font-mono text-[4px] leading-none">
           {Array(20).fill('010111001').map((b, i) => <div key={i}>{b}</div>)}
         </div>
       </motion.div>

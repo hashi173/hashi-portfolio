@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <div id="philosophy" className="container mx-auto px-8 md:px-16 flex flex-col md:flex-row gap-24 relative overflow-hidden">
       {/* Large Decorative Background Kanji ("Void") */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 text-[40rem] font-bold text-white/[0.01] pointer-events-none select-none font-['Shippori_Mincho'] -translate-x-1/4">
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 text-[20rem] font-bold text-white/[0.01] pointer-events-none select-none font-['Shippori_Mincho'] -translate-x-1/4">
         空
       </div>
 
@@ -67,11 +67,11 @@ const About: React.FC = () => {
           {SKILLS.map((skill, index) => (
             <div key={skill.name} className="relative group cursor-default">
               <div className="flex justify-between items-end mb-4">
-                <span className="text-white/20 text-[25px] font-mono group-hover:text-cyan-400 transition-colors">/ 0{index + 1}</span>
+                <span className="text-white/20 text-[12px] font-mono group-hover:text-cyan-400 transition-colors">/ 0{index + 1}</span>
                 <span className="text-white text-sm font-bold uppercase tracking-[0.3em] font-['Zen_Kaku_Gothic_New'] group-hover:text-cyan-400 transition-colors">
                   {skill.name}
                 </span>
-                <span className="text-[#D4AF37] text-[25px] font-mono opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+                <span className="text-[#D4AF37] text-[12px] font-mono opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
                   {skill.level}%
                 </span>
               </div>
@@ -100,7 +100,7 @@ const About: React.FC = () => {
           <div className="w-3/4 h-3/4 border border-white/10 rounded-full animate-[spin_25s_linear_infinite]" />
           <div className="w-1/2 h-1/2 border border-cyan-400/20 rounded-full animate-[spin_12s_linear_infinite_reverse]" />
           <div className="w-1/4 h-1/4 border border-[#D4AF37]/30 rounded-full flex items-center justify-center">
-            <span className="text-[8px] uppercase tracking-[1em] text-white/30 animate-pulse">Core</span>
+            <span className="text-[4px] uppercase tracking-[1em] text-white/30 animate-pulse">Core</span>
           </div>
 
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">

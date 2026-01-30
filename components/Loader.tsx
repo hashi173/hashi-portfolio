@@ -21,13 +21,13 @@ const Loader: React.FC = () => {
             strokeWidth="0.5"
             strokeLinecap="round"
             initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ 
-              pathLength: 1, 
+            animate={{
+              pathLength: 1,
               opacity: [0, 1, 1],
               strokeWidth: [0.5, 2, 1]
             }}
-            transition={{ 
-              duration: 2, 
+            transition={{
+              duration: 2,
               ease: "easeInOut",
               times: [0, 0.5, 1]
             }}
@@ -42,15 +42,15 @@ const Loader: React.FC = () => {
           className="mt-8 text-center"
         >
           <span className="text-[#2E4057] font-['Shippori_Mincho'] italic text-2xl tracking-widest block mb-2">Hashi</span>
-          <span className="text-[30px] uppercase tracking-[0.6em] text-[#2E4057]/40">Gathering Ink...</span>
+          <span className="text-[15px] uppercase tracking-[0.6em] text-[#2E4057]/40">Gathering Ink...</span>
         </motion.div>
       </div>
 
       {/* Decorative Brush Splashes */}
-      <motion.div 
+      <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
         transition={{ duration: 4, repeat: Infinity }}
-        className="absolute top-1/4 -left-20 text-[20rem] font-serif text-[#2E4057] pointer-events-none opacity-5"
+        className="absolute top-1/4 -left-20 text-[10rem] font-serif text-[#2E4057] pointer-events-none opacity-5"
       >
         忍耐
       </motion.div>

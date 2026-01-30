@@ -58,14 +58,14 @@ const BridgeTransition: React.FC<BridgeTransitionProps> = ({ progress }) => {
             Aspiring Full Stack Developer with a dream to craft my own immersive games.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-3 text-[25px] uppercase tracking-wider text-cyan-400 my-4">
+          <div className="flex flex-wrap justify-center gap-3 text-[12px] uppercase tracking-wider text-cyan-400 my-4">
             <span className="bg-cyan-400/10 px-3 py-1 rounded-full border border-cyan-400/20">IELTS 7.0</span>
             <span className="bg-cyan-400/10 px-3 py-1 rounded-full border border-cyan-400/20">Japanese (Conversational)</span>
             <span className="bg-cyan-400/10 px-3 py-1 rounded-full border border-cyan-400/20">Based in Hanoi, Vietnam</span>
           </div>
 
           <div className="p-4 bg-white/5 border border-white/10 rounded-lg">
-            <p className="mb-2 font-bold text-white tracking-widest uppercase text-[10px]">Tech Stack</p>
+            <p className="mb-2 font-bold text-white tracking-widest uppercase text-[5px]">Tech Stack</p>
             <p className="text-white/80 leading-loose text-xs">
               <span className="mx-2">Java</span>·<span className="mx-2">C/C++</span>·<span className="mx-2">Python</span>·<span className="mx-2">C#</span>·<span className="mx-2">TypeScript</span>·<span className="mx-2">React</span>·<span className="mx-2">Tailwind</span>·<span className="mx-2">CSS</span>
               <br />

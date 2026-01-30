@@ -52,14 +52,14 @@ const Footer: React.FC = () => {
         </motion.div>
 
         <div className="flex flex-col justify-center items-center border-t border-[#2E4057]/10 pt-16">
-          <div className="text-[20px] uppercase tracking-[0.5em] text-[#2E4057]/60 text-center">
+          <div className="text-[10px] uppercase tracking-[0.5em] text-[#2E4057]/60 text-center">
             &copy; Since 2026 created by Hashi / Built for the future
           </div>
         </div>
       </div>
 
       {/* Decorative Signature */}
-      <div className="absolute bottom-12 right-12 text-[15rem] font-['Shippori_Mincho'] text-[#2E4057]/5 select-none pointer-events-none -z-10">
+      <div className="absolute bottom-12 right-12 text-[7.5rem] font-['Shippori_Mincho'] text-[#2E4057]/5 select-none pointer-events-none -z-10">
         橋
       </div>
     </footer>

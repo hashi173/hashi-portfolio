@@ -41,7 +41,7 @@ const Portfolio: React.FC = () => {
               <div className="absolute bottom-8 left-8 right-8">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map(tag => (
-                    <span key={tag} className="text-[20px] uppercase tracking-widest text-cyan-400/70 bg-cyan-400/5 px-2 py-1 border border-cyan-400/20">
+                    <span key={tag} className="text-[10px] uppercase tracking-widest text-cyan-400/70 bg-cyan-400/5 px-2 py-1 border border-cyan-400/20">
                       {tag}
                     </span>
                   ))}
@@ -54,7 +54,7 @@ const Portfolio: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 10 }}
-                  className="mt-6 flex items-center text-[20px] uppercase tracking-widest text-white border-b border-white/20 pb-1 hover:border-cyan-400 transition-colors inline-block"
+                  className="mt-6 flex items-center text-[10px] uppercase tracking-widest text-white border-b border-white/20 pb-1 hover:border-cyan-400 transition-colors inline-block"
                 >
                   View Case Study <span className="ml-2">→</span>
                 </motion.a>
