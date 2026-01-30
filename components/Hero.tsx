@@ -101,7 +101,7 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
             />
 
             <motion.h1
-              className="text-9xl md:text-[7rem] font-bold text-[#006994] font-['Hina_Mincho'] italic tracking-tighter relative z-10"
+              className="text-9xl md:text-[21rem] font-bold text-[#006994] font-['Hina_Mincho'] italic tracking-tighter relative z-10"
               initial={{ opacity: 0, filter: 'blur(15px)', scale: 1.05 }}
               animate={{
                 opacity: 1,
@@ -127,7 +127,7 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.6 }}
               transition={{ delay: 1, duration: 2 }}
-              className="absolute inset-0 text-9xl md:text-[7rem] font-bold text-[#00334e] font-['Hina_Mincho'] italic tracking-tighter mix-blend-overlay pointer-events-none"
+              className="absolute inset-0 text-9xl md:text-[21rem] font-bold text-[#00334e] font-['Hina_Mincho'] italic tracking-tighter mix-blend-overlay pointer-events-none"
             >
               Hashi
             </motion.h1>
