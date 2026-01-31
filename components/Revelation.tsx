@@ -7,13 +7,14 @@ interface RevelationProps {
 }
 
 const Revelation: React.FC<RevelationProps> = ({ progress }) => {
-  const start = 0.15;
-  const end = 0.6;
+  // Adjusted for section position AFTER About section
+  const start = 0.45;
+  const end = 0.65;
 
-  const doorSpread = useTransform(progress, [start, start + 0.15], ['0%', '-100%']);
-  const doorSpreadRight = useTransform(progress, [start, start + 0.15], ['0%', '100%']);
-  const contentOpacity = useTransform(progress, [start + 0.1, start + 0.2], [0, 1]);
-  const contentScale = useTransform(progress, [start + 0.1, start + 0.2], [0.8, 1]);
+  const doorSpread = useTransform(progress, [start, start + 0.08], ['0%', '-100%']);
+  const doorSpreadRight = useTransform(progress, [start, start + 0.08], ['0%', '100%']);
+  const contentOpacity = useTransform(progress, [start + 0.04, start + 0.12], [0, 1]);
+  const contentScale = useTransform(progress, [start + 0.04, start + 0.12], [0.8, 1]);
 
   return (
     <div className="relative w-full h-full bg-[#0B1015] overflow-hidden">
