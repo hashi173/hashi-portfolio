@@ -46,8 +46,6 @@ const About: React.FC = () => {
         {/* Quick Info Tags */}
         <div className="flex flex-wrap justify-center gap-2 mt-4">
           {[
-            { icon: Languages, text: 'IELTS 7.0' },
-            { icon: Languages, text: 'Japanese (Conversational)' },
             { icon: MapPin, text: 'Hanoi, Vietnam' },
             { icon: Gamepad2, text: 'Game Dev Dreamer' }
           ].map((item, index) => (
@@ -144,6 +142,20 @@ const About: React.FC = () => {
                   {['MySQL', 'PostgreSQL', 'SQL Server', 'MongoDB'].map((tech) => (
                     <span key={tech} className="px-2.5 py-1 rounded-lg bg-white/5 text-white/70 text-xs border border-white/10">
                       {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-white/40 text-xs uppercase tracking-widest mb-2">Spoken Languages</p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { name: 'Vietnamese', level: 'Native' },
+                    { name: 'English', level: 'IELTS 7.0' },
+                    { name: 'Japanese', level: 'Conversational' }
+                  ].map((lang) => (
+                    <span key={lang.name} className="px-2.5 py-1 rounded-lg bg-gradient-to-r from-cyan-400/10 to-[#D4AF37]/10 text-white/90 text-xs border border-cyan-400/20">
+                      {lang.name} <span className="text-cyan-400">({lang.level})</span>
                     </span>
                   ))}
                 </div>

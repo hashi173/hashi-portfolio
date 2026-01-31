@@ -67,7 +67,7 @@ const Portfolio: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-24 flex justify-center">
+      <div className="mt-8 flex justify-center">
         <motion.a
           href="https://github.com/hashi173?tab=repositories"
           target="_blank"

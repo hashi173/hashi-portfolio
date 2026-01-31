@@ -1,6 +1,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, MotionValue, useTransform } from 'framer-motion';
+import WatercolorTrail from './WatercolorTrail';
 
 interface HeroProps {
   progress: MotionValue<number>;
@@ -69,6 +70,9 @@ const Hero: React.FC<HeroProps> = ({ progress }) => {
           mixBlendMode: 'multiply'
         }}
       />
+
+      {/* Watercolor Trail Effect following cursor */}
+      <WatercolorTrail containerRef={containerRef} />
 
       <div className="absolute inset-0 washi-texture opacity-25 pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FDFCF8]/30 to-[#FDFCF8] z-0" />

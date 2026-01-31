@@ -18,13 +18,17 @@ const Header: React.FC = () => {
       </div>
 
       <nav className="flex space-x-6">
-        {['About', 'Portfolio', 'Contact'].map((item) => (
+        {[
+          { label: 'About', href: '#philosophy' },
+          { label: 'Portfolio', href: '#portfolio' },
+          { label: 'Contact', href: '#contact' }
+        ].map((item) => (
           <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
+            key={item.label}
+            href={item.href}
             className="text-xs uppercase tracking-[0.3em] font-['Zen_Kaku_Gothic_New'] hover:text-[#D4AF37] transition-colors duration-300 relative group"
           >
-            {item}
+            {item.label}
             <span className="absolute -bottom-1 left-1/2 w-0 h-[1px] bg-current transition-all duration-500 group-hover:w-full group-hover:left-0" />
           </a>
         ))}
