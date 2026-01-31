@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Project, Skill } from './types';
+import { Project, Skill, Education } from './types';
 
 export const COLORS = {
   primaryLight: '#FDFCF8',
@@ -9,6 +9,22 @@ export const COLORS = {
   accentTradition: '#D4AF37',
   accentFuture: '#00FFFF',
 };
+
+export const EDUCATION: Education[] = [
+  {
+    period: '2020 - 2023',
+    school: 'THCS&THPT Lương Thế Vinh',
+    major: 'Lớp Chuyên Toán',
+    description: 'Specialized Mathematics Class'
+  },
+  {
+    period: '2023 - Hiện tại',
+    school: 'Posts and Telecommunications Institute of Technology (PTIT)',
+    major: 'Information Technology',
+    description: 'Học viện Công nghệ Bưu chính Viễn thông'
+  }
+];
+
 
 export const PROJECTS: Project[] = [
   {

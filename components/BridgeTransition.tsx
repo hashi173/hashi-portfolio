@@ -7,14 +7,12 @@ interface BridgeTransitionProps {
 }
 
 const BridgeTransition: React.FC<BridgeTransitionProps> = ({ progress }) => {
-  // Scrollytelling Mapping
   const start = 0;
   const end = 0.4;
 
   const opacity = useTransform(progress, [start, start + 0.05, end - 0.1, end], [0, 1, 1, 0]);
   const bridgeScale = useTransform(progress, [start, end], [1.2, 1]);
   const fogOpacity = useTransform(progress, [start, start + 0.2], [0.8, 0.2]);
-  const textParallax = useTransform(progress, [start, end], [0, -200]);
 
   return (
     <motion.div
@@ -22,7 +20,7 @@ const BridgeTransition: React.FC<BridgeTransitionProps> = ({ progress }) => {
       style={{ opacity }}
       className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center bg-[#FDFCF8]"
     >
-      {/* Background Bridge Image (Traditional) */}
+      {/* Background Bridge Image */}
       <motion.div
         style={{ scale: bridgeScale }}
         className="absolute inset-0 z-0"
@@ -32,70 +30,39 @@ const BridgeTransition: React.FC<BridgeTransitionProps> = ({ progress }) => {
           alt="Traditional Bridge"
           className="w-full h-full object-cover filter brightness-90 grayscale-[0.2]"
         />
-        {/* Soft volumetric fog overlay */}
         <motion.div
           style={{ opacity: fogOpacity }}
           className="absolute inset-0 bg-gradient-to-b from-[#FDFCF8] via-[#FDFCF8]/20 to-[#FDFCF8] mix-blend-soft-light"
         />
       </motion.div>
 
-      {/* Floating Calligraphy Elements */}
-      <motion.div
-        className="absolute inset-0 z-10 pointer-events-none flex items-center justify-center"
-      >
-        <div className="w-full max-w-xl px-4 flex flex-col items-center text-center">
-          {/* Profile Image */}
-          <div className="mb-4">
-            <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full p-1 bg-gradient-to-br from-[#006994] via-[#D4AF37] to-[#2E4057] shadow-xl shadow-black/30">
-              <div className="w-full h-full rounded-full overflow-hidden bg-[#FDFCF8]">
-                <img
-                  src="/hashi-portfolio/profile.jpg"
-                  alt="Hashi"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Decorative ring */}
-              <div className="absolute inset-[-3px] rounded-full border border-dashed border-white/30 pointer-events-none" />
-            </div>
-          </div>
-
-          <h2 className="text-white text-5xl md:text-8xl font-['Shippori_Mincho'] italic drop-shadow-2xl">
-            About Hashi
+      {/* Philosophy Content */}
+      <motion.div className="absolute inset-0 z-10 pointer-events-none flex items-center justify-center">
+        <div className="w-full max-w-2xl px-6 text-center">
+          <h2 className="text-white text-5xl md:text-8xl font-['Shippori_Mincho'] italic drop-shadow-2xl mb-4">
+            橋
           </h2>
-          <p className="mt-2 text-white/80 uppercase tracking-widest text-xs mb-4">
-            An art lover "accidentally" became a developer
+          <p className="text-white/80 uppercase tracking-[0.5em] text-xs mb-6">
+            The Bridge — Philosophy
           </p>
 
-          <div className="w-full space-y-1.5 font-['Zen_Kaku_Gothic_New'] text-white/90 text-xs leading-relaxed bg-black/60 backdrop-blur-md p-3 rounded-xl border border-white/10 shadow-2xl">
-            <p className="text-sm">
-              Honors IT Student at Posts and Telecommunications Institute of Technology (PTIT - Hà Nội).
-              <br />
-              Aspiring Full Stack Developer with a dream to craft my own immersive games.
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-1.5 text-[12px] uppercase tracking-wider text-cyan-400 my-2">
-              <span className="bg-cyan-400/10 px-1.5 py-1 rounded-full border border-cyan-400/20">IELTS 7.0</span>
-              <span className="bg-cyan-400/10 px-1.5 py-1 rounded-full border border-cyan-400/20">Japanese (Conversational)</span>
-              <span className="bg-cyan-400/10 px-1.5 py-1 rounded-full border border-cyan-400/20">Based in Hanoi, Vietnam</span>
-            </div>
-
-            <div className="p-2 bg-white/5 border border-white/10 rounded-lg">
-              <p className="mb-1 font-bold text-white tracking-widest uppercase text-[5px]">Tech Stack</p>
-              <p className="text-white/80 leading-loose text-xs">
-                <span className="mx-1">Java</span>·<span className="mx-1">C/C++</span>·<span className="mx-1">Python</span>·<span className="mx-1">C#</span>·<span className="mx-1">TypeScript</span>·<span className="mx-1">React</span>·<span className="mx-1">Tailwind</span>·<span className="mx-1">CSS</span>
-                <br />
-                <span className="mx-1">MySQL</span>·<span className="mx-1">PostgreSQL</span>·<span className="mx-1">SQLServer</span>·<span className="mx-1">MongoDB</span>·<span className="mx-1">NoSQL</span>
+          <div className="bg-black/50 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-2xl">
+            <blockquote className="text-white/90 font-['Shippori_Mincho'] text-lg md:text-xl leading-relaxed space-y-4">
+              <p>
+                <span className="text-[#D4AF37] font-bold">"Hashi"</span> (橋) means bridge. My practice exists at the collision point of ancient aesthetic principles and cutting-edge digital logic.
               </p>
-            </div>
-
-            <p className="italic font-serif text-white/80 pt-2 border-t border-white/10 text-sm">
-              "A creative fast learner with an eye for design. I thrive in independent deep work."
-            </p>
+              <p className="text-white/70 italic border-l-2 border-[#D4AF37]/50 pl-4 text-base">
+                Code is the modern brushstroke. Just as a calligrapher controls the flow of ink through breath, a developer orchestrates the flow of data through logic.
+              </p>
+              <p className="text-cyan-400/80 text-sm mt-4">
+                "A creative fast learner with an eye for design. I thrive in independent deep work."
+              </p>
+            </blockquote>
           </div>
         </div>
       </motion.div>
 
-      {/* Japanese Vertical Text annotations */}
+      {/* Japanese Vertical Text */}
       <div className="absolute right-6 top-1/2 -translate-y-1/2 vertical-rl text-[#2E4057]/40 font-['Shippori_Mincho'] text-xl tracking-tighter">
         自然と技術の調和
       </div>

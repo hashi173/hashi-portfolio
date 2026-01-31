@@ -85,6 +85,10 @@ const App: React.FC = () => {
           <BridgeTransition progress={smoothProgress} />
         </section>
 
+        <section className="relative z-30 bg-[#0B1015] py-16">
+          <About />
+        </section>
+
         <section className="h-screen w-full sticky top-0 overflow-hidden z-20">
           <Revelation progress={smoothProgress} />
         </section>
@@ -95,10 +99,6 @@ const App: React.FC = () => {
             創
           </div>
           <Portfolio />
-        </section>
-
-        <section className="relative z-30 bg-[#0B1015] py-16">
-          <About />
         </section>
 
         <section className="relative z-30">
