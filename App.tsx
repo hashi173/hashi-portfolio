@@ -11,6 +11,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import Loader from './components/Loader';
+import MusicPlayer from './components/MusicPlayer';
 
 
 const App: React.FC = () => {
@@ -69,6 +70,7 @@ const App: React.FC = () => {
       </AnimatePresence>
 
       <CustomCursor />
+      <MusicPlayer />
 
       {/* Texture Overlay */}
       <div className="fixed inset-0 washi-texture opacity-30 z-50 pointer-events-none" />
